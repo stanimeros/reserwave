@@ -1,8 +1,6 @@
-# React + Vite
+**Reserwave** is a powerful reservation system and store search engine designed to streamline the process of finding and booking stores. Built with React for a dynamic frontend and PHP for robust backend functionality, Reserwave provides an intuitive user experience for both store searches and reservation management.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Key Features
+- **Store Search Engine**: Quickly search for stores based on various criteria.
+- **Reservation System**: Easily make and manage reservations at selected stores.
+- **User Authentication**: Secure login and registration for personalized experiences.
