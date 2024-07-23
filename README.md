@@ -1,3 +1,4 @@
+# Reserwave
 **Reserwave** is a powerful reservation system and store search engine designed to streamline the process of finding and booking stores. Built with React for a dynamic frontend and PHP for robust backend functionality, Reserwave provides an intuitive user experience for both store searches and reservation management.
 
 ## Key Features
