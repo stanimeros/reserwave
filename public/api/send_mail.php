@@ -39,10 +39,10 @@
     }  
 
     function sendPHPMail($to, $subject, $header, $content, $footer) {
-        $headers = 'From: Reserwave <no-reply@reserwave.com>' . "\r\n" .
-            'Reply-To: hello@reserwave.com' . "\r\n" .
+        $headers = 'From: Reserwave <hello@stanimeros.com>' . "\r\n" .
+            'Reply-To: hello@stanimeros.com' . "\r\n" .
             'X-Mailer: PHP/' . phpversion() . "\r\n" .
-            'Return-Path: hello@reserwave.com' . "\r\n" .
+            'Return-Path: hello@stanimeros.com' . "\r\n" .
             'Content-Type: text/html; charset=UTF-8' . "\r\n";
 
         $body = $header . $content . $footer;
@@ -68,16 +68,17 @@
         try {
             //Server settings
             $mail = new \PHPMailer\PHPMailer\PHPMailer(true);
-            $mail->isSMTP();
-            $mail->Host       = 'mail.reserwave.com';
+            mail->isSMTP();
+            $mail->SMTPDebug = 0;
+            $mail->Host = 'smtp.hostinger.com';
+            $mail->Port = 587;
             $mail->SMTPAuth   = true;
-            $mail->Username   = 'no-reply@reserwave.com';
-            $mail->Password   = '_&UJn}sh=~Je';
+            $mail->Username   = 'hello@stanimeros.com';
+            $mail->Password   = 'rysgep-biwseR-vubdu2';
             $mail->SMTPSecure = 'tls';
-            $mail->Port       = 587;
 
-            $mail->setFrom('no-reply@reserwave.com', 'Reserwave');
-            $mail->addReplyTo('hello@reserwave.com', 'Reserwave');
+            $mail->setFrom('hello@stanimeros.com', 'Reserwave');
+            $mail->addReplyTo('hello@stanimeros.com', 'Reserwave');
             $mail->addAddress($to);
 
             $mail->CharSet = 'UTF-8';
