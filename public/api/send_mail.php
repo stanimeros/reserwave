@@ -60,11 +60,11 @@
     }  
 
     function sendSMTPTitanMail($to, $subject, $header, $content, $footer) {
-        if (!file_exists('/home/re552547/libs/vendor/autoload.php')) {
+        if (!file_exists('/home/u321831237/domains/stanimeros.com/public_html/vendor/autoload.php')) {
             return false;
         }
         
-        require '/home/re552547/libs/vendor/autoload.php';
+        require '/home/u321831237/domains/stanimeros.com/public_html/vendor/autoload.php';
         try {
             //Server settings
             $mail = new \PHPMailer\PHPMailer\PHPMailer(true);

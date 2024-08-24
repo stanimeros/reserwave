@@ -2,12 +2,12 @@
     include ("cors_bypass.php");
     include ("keys.php");
 
-    if (!file_exists('/home/re552547/libs/vendor/autoload.php')) {
+    if (!file_exists('/home/u321831237/domains/stanimeros.com/public_html/vendor/autoload.php')) {
         echo json_encode(['status' => 'failed', 'message' => 'Missing libraries']);
         exit;
     }
 
-    require "/home/re552547/libs/vendor/autoload.php";
+    require "/home/u321831237/domains/stanimeros.com/public_html/vendor/autoload.php";
 
     $stripePrivateKey = $keys['stripe_private_key']; //Private Key
     //$stripePrivateKey = $keys['test_stripe_private_key'];
